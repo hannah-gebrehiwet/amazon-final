@@ -1,0 +1,38 @@
+.category{
+    height: 290px;
+    width:270px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+}
+.category img{
+    width: 80%;
+    object-fit: contain;
+    max-height: 250px;
+    padding: 0px 10px;
+}
+.category a {
+    text-decoration: none;
+    color: rgb(35, 35,35);
+}
+.category p{
+    font-style: 12px;
+    font-weight: bold;
+    color: rgb(9,132,209);
+}
+.category_container{
+    position: relative;
+    margin-top:-10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+}
+.shop{
+    background-color: #fff;
+    font-size: small;
+}
+@media screen and  (max-width: 576px){ .category_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+    
+}
